@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="896.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppClient.ControllerMain">
+   <children>
+      <TableView fx:id="tvExcursii" layoutX="27.0" layoutY="41.0" prefHeight="200.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="tcId" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tcOT" prefWidth="105.0" text="obiectiv turistic" />
+            <TableColumn fx:id="tcFT" prefWidth="101.0" text="firma transport" />
+            <TableColumn fx:id="tcOP" prefWidth="75.0" text="ora plecarii" />
+            <TableColumn fx:id="tcP" prefWidth="75.0" text="pretul" />
+            <TableColumn fx:id="tcNLD" prefWidth="92.0" text="nr locuri disp" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tvExcursii2" layoutX="27.0" layoutY="265.0" prefHeight="200.0" prefWidth="524.0">
+        <columns>
+          <TableColumn fx:id="tcIdC" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="tcOTC" prefWidth="106.0" text="obiectiv turistic" />
+            <TableColumn fx:id="tcFTC" prefWidth="105.0" text="firma transport" />
+            <TableColumn fx:id="tcOTP" text="ora plecarii" />
+            <TableColumn fx:id="tcPC" prefWidth="66.0" text="pretul" />
+            <TableColumn fx:id="tcNLDC" prefWidth="90.0" text="nr locuri disp" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbExcursii1" layoutX="27.0" layoutY="24.0" text="Toate excursiile" />
+      <Label fx:id="lbExcursii2" layoutX="27.0" layoutY="248.0" text="Excursiile cautate" />
+      <TextField fx:id="txtTuristic" layoutX="657.0" layoutY="291.0" />
+      <TextField fx:id="txtLimInf" layoutX="657.0" layoutY="340.0" />
+      <TextField fx:id="txtLimSup" layoutX="657.0" layoutY="389.0" />
+      <Button fx:id="btnCauta" layoutX="694.0" layoutY="426.0" mnemonicParsing="false" onAction="#handleCauta" prefHeight="25.0" prefWidth="58.0" text="Cauta" />
+      <Label layoutX="568.0" layoutY="295.0" text="obiectiv turistic" />
+      <Label layoutX="566.0" layoutY="344.0" prefHeight="17.0" prefWidth="91.0" text="limita inferioara" />
+      <Label layoutX="564.0" layoutY="393.0" text="limita superioara" />
+      <Button fx:id="btnRezerva" layoutX="694.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleRezerva" text="Rezerva" />
+      <TextField fx:id="txtRezerva" layoutX="657.0" layoutY="66.0" />
+      <TextField fx:id="txtTelefon" layoutX="657.0" layoutY="116.0" />
+      <TextField fx:id="txtBilete" layoutX="657.0" layoutY="166.0" />
+      <Label layoutX="581.0" layoutY="70.0" text="Nume" />
+      <Label layoutX="581.0" layoutY="120.0" text="Telefon" />
+      <Label layoutX="584.0" layoutY="170.0" text="Nr bilete" />
+      <Button fx:id="btnLogout" layoutX="830.0" layoutY="12.0" mnemonicParsing="false" onAction="#handleLogOut" text="Log out" />
+   </children>
+</AnchorPane>
